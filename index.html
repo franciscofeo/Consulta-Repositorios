@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulta de Repositórios</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <form id="formInfo" onsubmit="returnRepos()" method="POST">
+        <input type="text" class="inputNome" placeholder="Digite o nome do usuário">
+        <button>Enviar</button>
+    </form>
+
+    <div class="secao">
+        <div id="preloader" style="display: none;"> <img src="img/preloader.gif" alt=""></div>
+        <div id="results" style="display: none;"></div>
+    </div>
+    
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="ex3.js"></script>
+</body>
+
+</html>
